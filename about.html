@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-raw-concrete">
+    <title>등촌 코인노래방 찐정보 | 형아가 다 까발린다</title>
+    <meta name="description" content="등촌 코인노래방의 모든 정보를 형아가 다 까발린다. 위치, 가격, 음질, 곡 수, 이벤트까지. 등촌동 코노 찐팬이라면 필독. 010-6279-0862">
+    <meta name="keywords" content="등촌 코인노래방, 등촌동 코인노래방, 등촌 코노, 등촌 노래방 정보, 코인노래방 위치, 코인노래방 가격, 등촌역 코인노래방">
+    <link rel="canonical" href="https://t3b08-dc-coin-info-1.vercel.app">
+    <meta property="og:title" content="등촌 코인노래방 찐정보 | 형아가 다 까발린다">
+    <meta property="og:description" content="등촌 코인노래방의 모든 정보를 형아가 다 까발린다. 위치, 가격, 음질, 곡 수, 이벤트까지. 등촌동 코노 찐팬이라면 필독.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:site_name" content="등촌 코인노래방 찐정보">
+    <meta property="og:image" content="https://t3b08-dc-coin-info-1.vercel.app/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="등촌 코인노래방 찐정보 | 형아가 다 까발린다">
+    <meta name="twitter:description" content="등촌 코인노래방의 모든 정보를 형아가 다 까발린다. 위치, 가격, 음질, 곡 수, 이벤트까지. 등촌동 코노 찐팬이라면 필독.">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root {
+            --black: #0a0a0a;
+            --white: #f5f5f5;
+            --gray: #8a8a8a;
+            --red: #c0392b;
+            --yellow: #f1c40f;
+            --blue: #2980b9;
+            --green: #27ae60;
+            --font-main: 'Courier New', Courier, monospace;
+            --font-head: 'Impact', 'Arial Black', sans-serif;
+            --spacing-unit: 1.5rem;
+            --border-thick: 4px solid var(--black);
+            --border-dashed: 2px dashed var(--black);
+            --shadow-hard: 6px 6px 0 var(--black);
+            --shadow-soft: 3px 3px 0 var(--gray);
+        }
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: var(--font-main);
+            background-color: var(--white);
+            color: var(--black);
+            line-height: 1.6;
+            min-height: 100vh;
+            position: relative;
+            padding-bottom: 4rem;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="none"/><path d="M10 10 L90 10 M10 30 L90 30 M10 50 L90 50 M10 70 L90 70 M10 90 L90 90 M10 10 L10 90 M30 10 L30 90 M50 10 L50 90 M70 10 L70 90 M90 10 L90 90" stroke="%230a0a0a" stroke-width="0.5" opacity="0.08"/></svg>');
+            pointer-events: none;
+            z-index: -1;
+        }
+        h1, h2, h3, h4 {
+            font-family: var(--font-head);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            line-height: 1.1;
+        }
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            border-bottom: var(--border-thick);
+            padding-bottom: 0.5rem;
+            word-break: break-word;
+        }
+        h2 {
+            font-size: 2.2rem;
+            margin-bottom: 0.75rem;
+            border-left: 6px solid var(--red);
+            padding-left: 0.75rem;
+        }
+        h3 {
+            font-size: 1.6rem;
+            margin-bottom: 0.5rem;
+        }
+        h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.3rem;
+        }
+        a {
+            color: var(--red);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            font-weight: bold;
+        }
+        a:hover {
+            color: var(--black);
+            background-color: var(--yellow);
+            text-decoration: none;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+        nav {
+            background-color: var(--black);
+            color: var(--white);
+            padding: 1rem 0;
+            border-bottom: var(--border-thick);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        nav .logo a {
+            color: var(--white);
+            font-family: var(--font-head);
+            font-size: 1.5rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        nav .logo a:hover {
+            color: var(--yellow);
+            background: none;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        nav ul li a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.3rem 0.6rem;
+            border: 2px solid transparent;
+            transition: all 0.2s;
+        }
+        nav ul li a:hover {
+            color: var(--black);
+            background-color: var(--yellow);
+            border-color: var(--white);
+        }
+        nav .tel-link {
+            color: var(--yellow);
+            font-family: var(--font-head);
+            font-size: 1.2rem;
+            text-decoration: none;
+            border: 2px solid var(--yellow);
+            padding: 0.3rem 1rem;
+            transition: all 0.2s;
+        }
+        nav .tel-link:hover {
+            color: var(--black);
+            background-color: var(--yellow);
+        }
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            background: none;
+            border: none;
+            padding: 5px;
+        }
+        .hamburger-menu span {
+            display: block;
+            width: 30px;
+            height: 4px;
+            background-color: var(--white);
+            border-radius: 2px;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            h2 {
+                font-size: 1.6rem;
+            }
+            h3 {
+                font-size: 1.3rem;
+            }
+            nav ul {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: var(--black);
+                padding: 1rem 0;
+                border-top: 2px solid var(--white);
+            }
+            nav ul.active {
+                display: flex;
+            }
+            nav ul li {
+                text-align: center;
+            }
+            .hamburger-menu {
+                display: flex;
+            }
+            nav .tel-link {
+                font-size: 1rem;
+                padding: 0.2rem 0.8rem;
+            }
+        }
+        .page-header {
+            padding: 3rem 0 2rem;
+            border-bottom: var(--border-dashed);
+            margin-bottom: 2rem;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        @media (max-width: 768px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .info-card {
+            border: var(--border-thick);
+            padding: 1.5rem;
+            background-color: var(--white);
+            box-shadow: var(--shadow-hard);
+            transition: transform 0.2s;
+        }
+        .info-card:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 9px 9px 0 var(--black);
+        }
+        .info-card h3 {
+            border-bottom: 3px solid var(--red);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .info-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .info-card ul li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--gray);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        .info-card ul li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--red);
+            font-weight: bold;
+        }
+        .table-wrap {
+            overflow-x: auto;
+            margin: 2rem 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: var(--border-thick);
+            font-size: 0.95rem;
+        }
+        table th {
+            background-color: var(--black);
+            color: var(--white);
+            padding: 0.75rem;
+            text-align: left;
+            font-family: var(--font-head);
+            text-transform: uppercase;
+        }
+        table td {
+            padding: 0.75rem;
+            border-bottom: 1px solid var(--gray);
+        }
+        table tr:nth-child(even) {
+            background-color: #e8e8e8;
+        }
+        table tr:hover {
+            background-color: var(--yellow);
+            color: var(--black);
+        }
+        .cta-box {
+            background-color: var(--black);
+            color: var(--white);
+            padding: 2rem;
+            border: var(--border-thick);
+            margin: 2rem 0;
+            text-align: center;
+        }
+        .cta-box h2 {
+            color: var(--yellow);
+            border-left-color: var(--yellow);
+        }
+        .cta-box a {
+            color: var(--yellow);
+            font-size: 1.3rem;
+        }
+        .cta-box a:hover {
+            color: var(--black);
+            background-color: var(--yellow);
+        }
+        .faq-list {
+            margin: 2rem 0;
+        }
+        .faq-item {
+            border: 2px solid var(--black);
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background-color: var(--white);
+        }
+        .faq-item h4 {
+            cursor: pointer;
+            position: relative;
+            padding-right: 1.5rem;
+        }
+        .faq-item h4::after {
+            content: '+';
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 1.5rem;
+            color: var(--red);
+        }
+        .faq-item p {
+            margin-top: 0.5rem;
+            padding-top: 0.5rem;
+            border-top: 1px dashed var(--gray);
+        }
+        footer {
+            background-color: var(--black);
+            color: var(--white);
+            text-align: center;
+            padding: 1.5rem 0;
+            border-top: var(--border-thick);
+            margin-top: 3rem;
+        }
+        footer a {
+            color: var(--yellow);
+        }
+        .badge {
+            display: inline-block;
+            background-color: var(--red);
+            color: var(--white);
+            padding: 0.2rem 0.8rem;
+            font-family: var(--font-head);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-right: 0.5rem;
+        }
+        .highlight {
+            background-color: var(--yellow);
+            padding: 0.1rem 0.3rem;
+            font-weight: bold;
+        }
+    </style>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <a href="/">등촌코노찐정보</a>
+            </div>
+            <button class="hamburger-menu" aria-label="메뉴 열기" onclick="this.nextElementSibling.classList.toggle('active')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul>
+                <li><a href="/">홈</a></li>
+                <li><a href="/info">정보</a></li>
+                <li><a href="/tips">꿀팁</a></li>
+                <li><a href="/review">후기</a></li>
+                <li><a href="/map">지도</a></li>
+            </ul>
+            <a href="tel:010-6279-0862" class="tel-link">📞 010-6279-0862</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="page-header">
+                <h1>등촌 코인노래방<br>찐정보 대방출</h1>
+                <p style="font-size: 1.2rem; margin-top: 0.5rem;">형아가 3년간 발로 뛰고 돈 쳐바른 정보를 <span class="highlight">전부 까발린다</span>. 가격, 위치, 음질, 이벤트, 심지어 업주 성격까지.</p>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>📍 위치 & 접근성</h3>
+                    <ul>
+                        <li>등촌역 3번 출구에서 도보 3분</li>
+                        <li>지하 1층, 간판 큼지막함 (못 찾을 수가 없음)</li>
+                        <li>주변에 편의점, 치킨집 많음 (부르면 됨)</li>
+                        <li>주차: 건물 뒤편 공영주차장 (3,000원/30분)</li>
+                        <li>24시 운영, 새벽에도 문 열려 있음</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>💸 가격표 (2024 기준)</h3>
+                    <ul>
+                        <li>1곡: 500원 (30초 무료 듣기 가능)</li>
+                        <li>30분: 4,000원 (가성비 goat)</li>
+                        <li>1시간: 7,000원 (노래 12~15곡 가능)</li>
+                        <li>2시간: 12,000원 (혼자 오면 이거 추천)</li>
+                        <li>자정 이후: 30분 3,000원 (야간 할인)</li>
+                        <li>카드 결제 가능 (현금은 5% 할인)</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>🎤 음질 & 시설</h3>
+                    <ul>
+                        <li>마이크: 슈어 SM58 (짭 아니고 정품)</li>
+                        <li>스피커: JBL (저음 찰짐)</li>
+                        <li>에코: 3단계 조절 (목 아플 때 1단계)</li>
+                        <li>방음: ㄹㅇ 좋음 (옆방 소리 안 들림)</li>
+                        <li>에어컨: 방마다 개별 (여름에 시원함)</li>
+                        <li>청소: 매일 오전 10시 (냄새 1도 없음)</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>📀 곡 수 & 업데이트</h3>
+                    <ul>
+                        <li>총 곡 수: 45,000곡 이상</li>
+                        <li>최신곡: 발매 후 2주 내 업데이트</li>
+                        <li>트로트: 5,000곡 (임영
+</body>
+</html>
